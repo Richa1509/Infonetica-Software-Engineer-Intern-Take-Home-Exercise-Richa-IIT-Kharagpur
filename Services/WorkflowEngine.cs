@@ -8,7 +8,6 @@ public class WorkflowEngine
     private readonly Dictionary<string, WorkflowDefinition> _defs = new();
     private readonly Dictionary<string, WorkflowInstance> _inst = new();
 
-    // -------------------- Definitions --------------------
     public string CreateDefinition(WorkflowDefinition def)
     {
         // Basic null defense
@@ -38,7 +37,7 @@ public class WorkflowEngine
 
     public IEnumerable<WorkflowDefinition> ListDefinitions() => _defs.Values;
 
-    // -------------------- Instances --------------------
+    // Instances 
     public WorkflowInstance StartInstance(string defId)
     {
         var def = GetDefinition(defId); // throws if missing
@@ -66,7 +65,7 @@ public class WorkflowEngine
 
     public IEnumerable<WorkflowInstance> ListInstances() => _inst.Values;
 
-    // -------------------- Runtime Transition --------------------
+    // Runtime Transition 
     public void ExecuteAction(string instanceId, string actionId)
     {
         var inst = GetInstance(instanceId); // throws if missing
@@ -101,7 +100,7 @@ public class WorkflowEngine
         inst.History.Add((action.Id, DateTime.UtcNow));
     }
 
-    // -------------------- Validation Helpers --------------------
+    // Validation Helpers 
     private static void ValidateDefinition(WorkflowDefinition def)
     {
         // Must have states
