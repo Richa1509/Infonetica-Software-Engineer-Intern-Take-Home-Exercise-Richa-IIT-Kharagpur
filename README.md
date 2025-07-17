@@ -1,5 +1,5 @@
 # Infonetica Software Engineer Intern Take-Home Exercise  
-## Submitted by: Richa Gahlawat | B.Tech (Hons.) Chemical Engineering | IIT Kharagpur
+## Submitted by: Richa | B.Tech (Hons.) Chemical Engineering | IIT Kharagpur
 
 This repository contains my solution to the take-home exercise for the Software Engineer Intern role at Infonetica. I have implemented a lightweight and extensible workflow engine using .NET 8 and C#, following the provided requirements and guidelines.
 
@@ -103,7 +103,5 @@ If given more time, I would consider adding:
 
 Feel free to reach out to me if you'd like to discuss this project in more detail.
 
-**Richa Gahlawat**  
+**Richa **  
 IIT Kharagpur  
-Email: richa1509@gmail.com  
-GitHub: [github.com/Richa1509](https://github.com/Richa1509)
